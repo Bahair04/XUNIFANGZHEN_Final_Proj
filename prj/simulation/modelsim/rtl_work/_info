@@ -19,7 +19,7 @@ Z4 !s92 -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/prj -O0
 !i10b 1
 !s100 1OY0]=UOkdAfgJ`l`684J0
 !s85 0
-!s108 1746492324.197000
+!s108 1746493353.230000
 !s107 D:/XUNIFANGZHEN/FPGA/prj/altpll1.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/XUNIFANGZHEN/FPGA/prj|D:/XUNIFANGZHEN/FPGA/prj/altpll1.v|
 !s101 -O0
@@ -38,7 +38,7 @@ R3
 !i10b 1
 !s100 ShSlQTI;<>DN?5GF?^Ehd1
 !s85 0
-!s108 1746492324.422000
+!s108 1746493353.371000
 !s107 D:/XUNIFANGZHEN/FPGA/prj/db/altpll1_altpll.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/XUNIFANGZHEN/FPGA/prj/db|D:/XUNIFANGZHEN/FPGA/prj/db/altpll1_altpll.v|
 !s101 -O0
@@ -60,7 +60,7 @@ Z5 !s92 -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/rtl -O0
 !i10b 1
 !s100 aMLE<RMX8f`7`1?o_C3g`0
 !s85 0
-!s108 1746492323.835000
+!s108 1746493353.036000
 !s107 D:/XUNIFANGZHEN/FPGA/rtl/FPGA.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/XUNIFANGZHEN/FPGA/rtl|D:/XUNIFANGZHEN/FPGA/rtl/FPGA.v|
 !s101 -O0
@@ -80,7 +80,7 @@ R4
 !i10b 1
 !s100 3igYBNY?zz_nM2OW>okjC3
 !s85 0
-!s108 1746492324.125000
+!s108 1746493353.189000
 !s107 D:/XUNIFANGZHEN/FPGA/prj/ram1.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/XUNIFANGZHEN/FPGA/prj|D:/XUNIFANGZHEN/FPGA/prj/ram1.v|
 !s101 -O0
@@ -100,7 +100,7 @@ R4
 !i10b 1
 !s100 iGa472@:=4=VLJH`61iW;3
 !s85 0
-!s108 1746492324.268000
+!s108 1746493353.277000
 !s107 D:/XUNIFANGZHEN/FPGA/prj/rom1.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/XUNIFANGZHEN/FPGA/prj|D:/XUNIFANGZHEN/FPGA/prj/rom1.v|
 !s101 -O0
@@ -120,7 +120,7 @@ R4
 !i10b 1
 !s100 DLC?nOhWheLWLafBReZ^l1
 !s85 0
-!s108 1746492324.345000
+!s108 1746493353.324000
 !s107 D:/XUNIFANGZHEN/FPGA/prj/shiftreg.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/XUNIFANGZHEN/FPGA/prj|D:/XUNIFANGZHEN/FPGA/prj/shiftreg.v|
 !s101 -O0
@@ -140,7 +140,7 @@ R5
 !i10b 1
 !s100 755BM?c2Vg2Z]TEXGXQ;l2
 !s85 0
-!s108 1746492324.057000
+!s108 1746493353.150000
 !s107 D:/XUNIFANGZHEN/FPGA/rtl/sobel.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/XUNIFANGZHEN/FPGA/rtl|D:/XUNIFANGZHEN/FPGA/rtl/sobel.v|
 !s101 -O0
@@ -158,7 +158,7 @@ R2
 r1
 !s85 0
 31
-!s108 1746492324.509000
+!s108 1746493353.416000
 !s107 D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/XUNIFANGZHEN/FPGA/prj/../sim|D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v|
 !s101 -O0
@@ -180,7 +180,7 @@ R5
 !i10b 1
 !s100 km=][oBYEQc@K?:83Nob:3
 !s85 0
-!s108 1746492323.991000
+!s108 1746493353.110000
 !s107 D:/XUNIFANGZHEN/FPGA/rtl/vga_ctrl.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/XUNIFANGZHEN/FPGA/rtl|D:/XUNIFANGZHEN/FPGA/rtl/vga_ctrl.v|
 !s101 -O0
@@ -200,7 +200,7 @@ R5
 !i10b 1
 !s100 >eNiminVReRa?UhAP^CSk0
 !s85 0
-!s108 1746492323.920000
+!s108 1746493353.073000
 !s107 D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/XUNIFANGZHEN/FPGA/rtl|D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v|
 !s101 -O0

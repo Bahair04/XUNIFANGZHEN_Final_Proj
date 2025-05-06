@@ -1,11 +1,11 @@
-Fitter Status : Successful - Tue May 06 08:45:00 2025
+Fitter Status : Successful - Tue May 06 09:39:01 2025
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : FPGA
 Top-level Entity Name : FPGA
 Family : Cyclone IV E
 Device : EP4CE40U19A7
 Timing Models : Final
-Total logic elements : 642 / 39,600 ( 2 % )
+Total logic elements : 649 / 39,600 ( 2 % )
     Total combinational functions : 600 / 39,600 ( 2 % )
     Dedicated logic registers : 235 / 39,600 ( < 1 % )
 Total registers : 235

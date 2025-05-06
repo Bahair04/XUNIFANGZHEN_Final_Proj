@@ -95,7 +95,7 @@ always @(posedge clk or negedge rstn) begin
         G <= Gx + Gy;
     end
 end
-assign data_out = G > 150 ? 1 : 0;
+assign data_out = G > 230 ? 1 : 0;
 reg data_valid_reg;
 always @(posedge clk or negedge rstn) begin
     if (rstn == 1'b0)

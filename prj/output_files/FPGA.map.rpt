@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FPGA
-Tue May 06 08:44:31 2025
+Tue May 06 09:38:48 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -67,7 +67,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue May 06 08:44:31 2025       ;
+; Analysis & Synthesis Status        ; Successful - Tue May 06 09:38:48 2025       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; FPGA                                        ;
 ; Top-level Entity Name              ; FPGA                                        ;
@@ -180,12 +180,12 @@ applicable agreement for further details.
 ; Maximum allowed            ; 10          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 8           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ; < 0.1%      ;
-;     Processors 9-16        ;   0.0%      ;
+;     Processors 2-6         ; < 0.1%      ;
+;     Processors 7-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -265,9 +265,9 @@ applicable agreement for further details.
 ;                                             ;                                                                                             ;
 ; Total combinational functions               ; 600                                                                                         ;
 ; Logic element usage by number of LUT inputs ;                                                                                             ;
-;     -- 4 input functions                    ; 214                                                                                         ;
-;     -- 3 input functions                    ; 209                                                                                         ;
-;     -- <=2 input functions                  ; 177                                                                                         ;
+;     -- 4 input functions                    ; 213                                                                                         ;
+;     -- 3 input functions                    ; 211                                                                                         ;
+;     -- <=2 input functions                  ; 176                                                                                         ;
 ;                                             ;                                                                                             ;
 ; Logic elements by mode                      ;                                                                                             ;
 ;     -- normal mode                          ; 333                                                                                         ;
@@ -1269,7 +1269,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Tue May 06 08:44:27 2025
+    Info: Processing started: Tue May 06 09:38:45 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FPGA -c FPGA
 Info (11104): Parallel Compilation has detected 16 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 10 of the 10 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file /xunifangzhen/fpga/sim/tb_vga_pic.v
@@ -1583,10 +1583,10 @@ Info (21057): Implemented 834 device resources after synthesis - the final resou
     Info (21064): Implemented 116 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 62 warnings
-    Info: Peak virtual memory: 4709 megabytes
-    Info: Processing ended: Tue May 06 08:44:31 2025
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4706 megabytes
+    Info: Processing ended: Tue May 06 09:38:48 2025
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
 
 
 +------------------------------------------+

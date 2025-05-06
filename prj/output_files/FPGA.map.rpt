@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FPGA
-Tue May 06 09:38:48 2025
+Tue May 06 10:23:43 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -39,9 +39,10 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
  31. Port Connectivity Checks: "vga_pic:vga_pic|ram1:ram1_inst"
  32. Port Connectivity Checks: "vga_pic:vga_pic|sobel:u_sobel|shiftreg:shiftreg_inst"
  33. Port Connectivity Checks: "vga_pic:vga_pic|rom1:rom1_inst"
- 34. Elapsed Time Per Partition
- 35. Analysis & Synthesis Messages
- 36. Analysis & Synthesis Suppressed Messages
+ 34. Port Connectivity Checks: "vga_pic:vga_pic"
+ 35. Elapsed Time Per Partition
+ 36. Analysis & Synthesis Messages
+ 37. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -67,7 +68,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue May 06 09:38:48 2025       ;
+; Analysis & Synthesis Status        ; Successful - Tue May 06 10:23:43 2025       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; FPGA                                        ;
 ; Top-level Entity Name              ; FPGA                                        ;
@@ -180,12 +181,12 @@ applicable agreement for further details.
 ; Maximum allowed            ; 10          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 6           ;
+; Maximum used               ; 7           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ; < 0.1%      ;
-;     Processors 7-16        ;   0.0%      ;
+;     Processors 2-7         ; < 0.1%      ;
+;     Processors 8-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -265,9 +266,9 @@ applicable agreement for further details.
 ;                                             ;                                                                                             ;
 ; Total combinational functions               ; 600                                                                                         ;
 ; Logic element usage by number of LUT inputs ;                                                                                             ;
-;     -- 4 input functions                    ; 213                                                                                         ;
-;     -- 3 input functions                    ; 211                                                                                         ;
-;     -- <=2 input functions                  ; 176                                                                                         ;
+;     -- 4 input functions                    ; 214                                                                                         ;
+;     -- 3 input functions                    ; 209                                                                                         ;
+;     -- <=2 input functions                  ; 177                                                                                         ;
 ;                                             ;                                                                                             ;
 ; Logic elements by mode                      ;                                                                                             ;
 ;     -- normal mode                          ; 333                                                                                         ;
@@ -1254,6 +1255,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "vga_pic:vga_pic"                                                                                                      ;
++-------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port              ; Type   ; Severity ; Details                                                                                                  ;
++-------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; tb_ram_rden       ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; tb_color_data_out ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; tb_rom_en         ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -1269,7 +1281,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Tue May 06 09:38:45 2025
+    Info: Processing started: Tue May 06 10:23:40 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FPGA -c FPGA
 Info (11104): Parallel Compilation has detected 16 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 10 of the 10 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file /xunifangzhen/fpga/sim/tb_vga_pic.v
@@ -1356,32 +1368,32 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/altp
     Info (12023): Found entity 1: altpll1_altpll
 Info (12128): Elaborating entity "altpll1_altpll" for hierarchy "altpll1:altpll1_inst|altpll:altpll_component|altpll1_altpll:auto_generated"
 Info (12128): Elaborating entity "vga_pic" for hierarchy "vga_pic:vga_pic"
-Warning (10230): Verilog HDL assignment warning at vga_pic.v(79): truncated value with size 32 to match size of target (8)
-Warning (10240): Verilog HDL Always Construct warning at vga_pic.v(106): inferring latch(es) for variable "color_data_out", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "color_data_out[0]" at vga_pic.v(106)
-Info (10041): Inferred latch for "color_data_out[1]" at vga_pic.v(106)
-Info (10041): Inferred latch for "color_data_out[2]" at vga_pic.v(106)
-Info (10041): Inferred latch for "color_data_out[3]" at vga_pic.v(106)
-Info (10041): Inferred latch for "color_data_out[4]" at vga_pic.v(106)
-Info (10041): Inferred latch for "color_data_out[5]" at vga_pic.v(106)
-Info (10041): Inferred latch for "color_data_out[6]" at vga_pic.v(106)
-Info (10041): Inferred latch for "color_data_out[7]" at vga_pic.v(106)
-Info (10041): Inferred latch for "color_data_out[8]" at vga_pic.v(106)
-Info (10041): Inferred latch for "color_data_out[9]" at vga_pic.v(106)
-Info (10041): Inferred latch for "color_data_out[10]" at vga_pic.v(106)
-Info (10041): Inferred latch for "color_data_out[11]" at vga_pic.v(106)
-Info (10041): Inferred latch for "color_data_out[12]" at vga_pic.v(106)
-Info (10041): Inferred latch for "color_data_out[13]" at vga_pic.v(106)
-Info (10041): Inferred latch for "color_data_out[14]" at vga_pic.v(106)
-Info (10041): Inferred latch for "color_data_out[15]" at vga_pic.v(106)
-Info (10041): Inferred latch for "color_data_out[16]" at vga_pic.v(106)
-Info (10041): Inferred latch for "color_data_out[17]" at vga_pic.v(106)
-Info (10041): Inferred latch for "color_data_out[18]" at vga_pic.v(106)
-Info (10041): Inferred latch for "color_data_out[19]" at vga_pic.v(106)
-Info (10041): Inferred latch for "color_data_out[20]" at vga_pic.v(106)
-Info (10041): Inferred latch for "color_data_out[21]" at vga_pic.v(106)
-Info (10041): Inferred latch for "color_data_out[22]" at vga_pic.v(106)
-Info (10041): Inferred latch for "color_data_out[23]" at vga_pic.v(106)
+Warning (10230): Verilog HDL assignment warning at vga_pic.v(82): truncated value with size 32 to match size of target (8)
+Warning (10240): Verilog HDL Always Construct warning at vga_pic.v(109): inferring latch(es) for variable "color_data_out", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "color_data_out[0]" at vga_pic.v(109)
+Info (10041): Inferred latch for "color_data_out[1]" at vga_pic.v(109)
+Info (10041): Inferred latch for "color_data_out[2]" at vga_pic.v(109)
+Info (10041): Inferred latch for "color_data_out[3]" at vga_pic.v(109)
+Info (10041): Inferred latch for "color_data_out[4]" at vga_pic.v(109)
+Info (10041): Inferred latch for "color_data_out[5]" at vga_pic.v(109)
+Info (10041): Inferred latch for "color_data_out[6]" at vga_pic.v(109)
+Info (10041): Inferred latch for "color_data_out[7]" at vga_pic.v(109)
+Info (10041): Inferred latch for "color_data_out[8]" at vga_pic.v(109)
+Info (10041): Inferred latch for "color_data_out[9]" at vga_pic.v(109)
+Info (10041): Inferred latch for "color_data_out[10]" at vga_pic.v(109)
+Info (10041): Inferred latch for "color_data_out[11]" at vga_pic.v(109)
+Info (10041): Inferred latch for "color_data_out[12]" at vga_pic.v(109)
+Info (10041): Inferred latch for "color_data_out[13]" at vga_pic.v(109)
+Info (10041): Inferred latch for "color_data_out[14]" at vga_pic.v(109)
+Info (10041): Inferred latch for "color_data_out[15]" at vga_pic.v(109)
+Info (10041): Inferred latch for "color_data_out[16]" at vga_pic.v(109)
+Info (10041): Inferred latch for "color_data_out[17]" at vga_pic.v(109)
+Info (10041): Inferred latch for "color_data_out[18]" at vga_pic.v(109)
+Info (10041): Inferred latch for "color_data_out[19]" at vga_pic.v(109)
+Info (10041): Inferred latch for "color_data_out[20]" at vga_pic.v(109)
+Info (10041): Inferred latch for "color_data_out[21]" at vga_pic.v(109)
+Info (10041): Inferred latch for "color_data_out[22]" at vga_pic.v(109)
+Info (10041): Inferred latch for "color_data_out[23]" at vga_pic.v(109)
 Info (12128): Elaborating entity "rom1" for hierarchy "vga_pic:vga_pic|rom1:rom1_inst"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_pic:vga_pic|rom1:rom1_inst|altsyncram:altsyncram_component"
 Info (12130): Elaborated megafunction instantiation "vga_pic:vga_pic|rom1:rom1_inst|altsyncram:altsyncram_component"
@@ -1517,7 +1529,7 @@ Info (12131): Elaborated megafunction instantiation "vga_pic:vga_pic|lpm_mult:Mu
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_kgh.tdf
     Info (12023): Found entity 1: add_sub_kgh
 Info (12131): Elaborated megafunction instantiation "vga_pic:vga_pic|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "vga_pic:vga_pic|lpm_mult:Mult0"
-Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13012): Latch vga_pic:vga_pic|color_data_out[16] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal keyin[0]
 Warning (13012): Latch vga_pic:vga_pic|color_data_out[17] has unsafe behavior
@@ -1583,8 +1595,8 @@ Info (21057): Implemented 834 device resources after synthesis - the final resou
     Info (21064): Implemented 116 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 62 warnings
-    Info: Peak virtual memory: 4706 megabytes
-    Info: Processing ended: Tue May 06 09:38:48 2025
+    Info: Peak virtual memory: 4709 megabytes
+    Info: Processing ended: Tue May 06 10:23:43 2025
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:01
 

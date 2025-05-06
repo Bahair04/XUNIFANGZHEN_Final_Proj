@@ -15,8 +15,10 @@ reg   [9 : 0]  pix_x                       = 0 ;
 reg   [9 : 0]  pix_y                       = 0 ;
 
 // vga_pic Outputs
+wire tb_ram_rden;
+wire [23 : 0] tb_color_data_out;
 wire  [23 : 0]  color_data_out             ;
-
+wire tb_rom_en;
 
 initial
 begin
@@ -52,6 +54,9 @@ always @(posedge clk or negedge rstn) begin
 end
 
 vga_pic  u_vga_pic (
+    .tb_ram_rden             ( tb_ram_rden              ),
+    .tb_color_data_out       ( tb_color_data_out        ),
+    .tb_rom_en               ( tb_rom_en                ),
     .clk                     ( clk                      ),
     .rstn                    ( rstn                     ),
     .keyin                   ( keyin           [3 : 0]  ),
@@ -66,4 +71,16 @@ begin
     #(SIMU_TIME) $finish;
 end
 
+integer fid;
+initial begin
+    fid = $fopen("D:/XUNIFANGZHEN/FPGA/sim/sobel_res_out.txt");
+    if (!fid) begin
+        $display("open file error");
+        $finish;
+    end
+end
+wire rst_write = clk & tb_ram_rden;
+always @(posedge rst_write) begin
+    $fdisplay(fid, "%d", tb_color_data_out);
+end
 endmodule

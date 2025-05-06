@@ -1,4 +1,7 @@
 module vga_pic (
+    output wire tb_ram_rden,
+    output wire [23 : 0] tb_color_data_out,
+    output wire tb_rom_en,
     input wire clk,                                 //时钟信号
     input wire rstn,                                //复位信号(低电平有效)
     input wire [3 : 0] keyin,                       //按键输入
@@ -112,4 +115,8 @@ always @(*) begin
     else if (keyin == 4'b0100)
         color_data_out <= ram_data ? 24'hFFFFFF : 24'h000000;
 end
+
+assign tb_ram_rden = ram_rden;
+assign tb_color_data_out = color_data_out;
+assign tb_rom_en = rom_en;
 endmodule

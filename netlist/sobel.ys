@@ -1,0 +1,4 @@
+read_verilog -sv -formal -overwrite {workspace}/prj/shiftreg.v
+read_verilog -sv -formal -overwrite {workspace}/rtl/sobel.v
+design -reset-vlog; proc;
+write_json {workspace}/netlist/sobel.json

@@ -1,0 +1,206 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\XUNIFANGZHEN\FPGA\prj\simulation\modelsim
+valtpll1
+IC=8lV_VR^2jJN`mcHo=5B3
+VEXHm[zo?eMT4z2Yn[j6hT0
+Z1 dD:\XUNIFANGZHEN\FPGA\prj\simulation\modelsim
+w1746431254
+8D:/XUNIFANGZHEN/FPGA/prj/altpll1.v
+FD:/XUNIFANGZHEN/FPGA/prj/altpll1.v
+L0 39
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/prj -O0
+!i10b 1
+!s100 1OY0]=UOkdAfgJ`l`684J0
+!s85 0
+!s108 1746492324.197000
+!s107 D:/XUNIFANGZHEN/FPGA/prj/altpll1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/XUNIFANGZHEN/FPGA/prj|D:/XUNIFANGZHEN/FPGA/prj/altpll1.v|
+!s101 -O0
+valtpll1_altpll
+I2]]=YL`:aG`:_VETHDXWB0
+VAMJzFnY8dK51[_@R7=Jg31
+R1
+w1746431345
+8D:/XUNIFANGZHEN/FPGA/prj/db/altpll1_altpll.v
+FD:/XUNIFANGZHEN/FPGA/prj/db/altpll1_altpll.v
+L0 29
+R2
+r1
+31
+R3
+!i10b 1
+!s100 ShSlQTI;<>DN?5GF?^Ehd1
+!s85 0
+!s108 1746492324.422000
+!s107 D:/XUNIFANGZHEN/FPGA/prj/db/altpll1_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/XUNIFANGZHEN/FPGA/prj/db|D:/XUNIFANGZHEN/FPGA/prj/db/altpll1_altpll.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/prj/db -O0
+vFPGA
+IT6h^9<Ii?PRJW>UJ6j9]d2
+VOQ3ekD9H<2IBKc1z^Oib10
+R1
+w1746431441
+8D:/XUNIFANGZHEN/FPGA/rtl/FPGA.v
+FD:/XUNIFANGZHEN/FPGA/rtl/FPGA.v
+L0 1
+R2
+r1
+31
+R3
+n@f@p@g@a
+Z5 !s92 -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/rtl -O0
+!i10b 1
+!s100 aMLE<RMX8f`7`1?o_C3g`0
+!s85 0
+!s108 1746492323.835000
+!s107 D:/XUNIFANGZHEN/FPGA/rtl/FPGA.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/XUNIFANGZHEN/FPGA/rtl|D:/XUNIFANGZHEN/FPGA/rtl/FPGA.v|
+!s101 -O0
+vram1
+IS_::;Cf8JM8jza:72WmAj2
+V<gGX5d?FhaZPV;R;Pc0^80
+R1
+w1746436154
+8D:/XUNIFANGZHEN/FPGA/prj/ram1.v
+FD:/XUNIFANGZHEN/FPGA/prj/ram1.v
+L0 39
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 3igYBNY?zz_nM2OW>okjC3
+!s85 0
+!s108 1746492324.125000
+!s107 D:/XUNIFANGZHEN/FPGA/prj/ram1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/XUNIFANGZHEN/FPGA/prj|D:/XUNIFANGZHEN/FPGA/prj/ram1.v|
+!s101 -O0
+vrom1
+IXDel`J>@[?Tk;F`h3H]D_0
+V6X2TKJXMXS86Pc1X2`0F42
+R1
+w1746431328
+8D:/XUNIFANGZHEN/FPGA/prj/rom1.v
+FD:/XUNIFANGZHEN/FPGA/prj/rom1.v
+L0 39
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 iGa472@:=4=VLJH`61iW;3
+!s85 0
+!s108 1746492324.268000
+!s107 D:/XUNIFANGZHEN/FPGA/prj/rom1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/XUNIFANGZHEN/FPGA/prj|D:/XUNIFANGZHEN/FPGA/prj/rom1.v|
+!s101 -O0
+vshiftreg
+IbB2`4@0IA9AbZc;MQNiB>2
+VX:Aje?<3f]Y8kbh?0dlRI1
+R1
+w1746431416
+8D:/XUNIFANGZHEN/FPGA/prj/shiftreg.v
+FD:/XUNIFANGZHEN/FPGA/prj/shiftreg.v
+L0 39
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 DLC?nOhWheLWLafBReZ^l1
+!s85 0
+!s108 1746492324.345000
+!s107 D:/XUNIFANGZHEN/FPGA/prj/shiftreg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/XUNIFANGZHEN/FPGA/prj|D:/XUNIFANGZHEN/FPGA/prj/shiftreg.v|
+!s101 -O0
+vsobel
+I16J=mGR:@`g8;L:ceffnI3
+V8kVBTA[CVnbh82Zdi4_1]0
+R1
+w1746435912
+8D:/XUNIFANGZHEN/FPGA/rtl/sobel.v
+FD:/XUNIFANGZHEN/FPGA/rtl/sobel.v
+L0 1
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 755BM?c2Vg2Z]TEXGXQ;l2
+!s85 0
+!s108 1746492324.057000
+!s107 D:/XUNIFANGZHEN/FPGA/rtl/sobel.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/XUNIFANGZHEN/FPGA/rtl|D:/XUNIFANGZHEN/FPGA/rtl/sobel.v|
+!s101 -O0
+vtb_vga_pic
+!i10b 1
+!s100 77jVSe>UhL1AgTHAzBfSd0
+I7kndCA9cBBDL:VH@bBDl42
+Ve^VU2NEzA9OiOEBae_zCI0
+R1
+w1746437727
+8D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v
+FD:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v
+L0 4
+R2
+r1
+!s85 0
+31
+!s108 1746492324.509000
+!s107 D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/XUNIFANGZHEN/FPGA/prj/../sim|D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/prj/../sim -O0
+vvga_ctrl
+I75[b?jFQgIRS_2o[D3f^^1
+Vl?>IzA>zP>E=hoCHG`BnJ2
+R1
+w1741070663
+8D:/XUNIFANGZHEN/FPGA/rtl/vga_ctrl.v
+FD:/XUNIFANGZHEN/FPGA/rtl/vga_ctrl.v
+L0 1
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 km=][oBYEQc@K?:83Nob:3
+!s85 0
+!s108 1746492323.991000
+!s107 D:/XUNIFANGZHEN/FPGA/rtl/vga_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/XUNIFANGZHEN/FPGA/rtl|D:/XUNIFANGZHEN/FPGA/rtl/vga_ctrl.v|
+!s101 -O0
+vvga_pic
+IQ>C1A^k]?[HE1z>I6nz=O2
+V22NQYnccV43nQP59F8l8[3
+R1
+w1746438162
+8D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v
+FD:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v
+L0 1
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 >eNiminVReRa?UhAP^CSk0
+!s85 0
+!s108 1746492323.920000
+!s107 D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/XUNIFANGZHEN/FPGA/rtl|D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v|
+!s101 -O0

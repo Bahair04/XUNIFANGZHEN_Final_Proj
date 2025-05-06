@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 125C Model Setup 'altpll1_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -4.449
+TNS   : -126.836
+
+Type  : Slow 1200mV 125C Model Setup 'keyin[0]'
+Slack : -3.559
+TNS   : -66.084
+
+Type  : Slow 1200mV 125C Model Hold 'keyin[0]'
+Slack : -3.346
+TNS   : -76.079
+
+Type  : Slow 1200mV 125C Model Hold 'altpll1_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.371
+TNS   : 0.000
+
+Type  : Slow 1200mV 125C Model Recovery 'keyin[0]'
+Slack : -0.846
+TNS   : -2.446
+
+Type  : Slow 1200mV 125C Model Removal 'keyin[0]'
+Slack : -2.474
+TNS   : -56.992
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'keyin[0]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'clk'
+Slack : 9.856
+TNS   : 0.000
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'altpll1_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 14.739
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Setup 'altpll1_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -3.671
+TNS   : -101.981
+
+Type  : Slow 1200mV -40C Model Setup 'keyin[0]'
+Slack : -3.580
+TNS   : -68.541
+
+Type  : Slow 1200mV -40C Model Hold 'keyin[0]'
+Slack : -2.558
+TNS   : -57.811
+
+Type  : Slow 1200mV -40C Model Hold 'altpll1_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Recovery 'keyin[0]'
+Slack : -1.193
+TNS   : -12.227
+
+Type  : Slow 1200mV -40C Model Removal 'keyin[0]'
+Slack : -1.777
+TNS   : -40.050
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'keyin[0]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'clk'
+Slack : 9.886
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'altpll1_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 14.702
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Setup 'altpll1_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -2.451
+TNS   : -71.141
+
+Type  : Fast 1200mV -40C Model Setup 'keyin[0]'
+Slack : -1.406
+TNS   : -23.873
+
+Type  : Fast 1200mV -40C Model Hold 'keyin[0]'
+Slack : -2.202
+TNS   : -51.127
+
+Type  : Fast 1200mV -40C Model Hold 'altpll1_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.150
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Recovery 'keyin[0]'
+Slack : -0.105
+TNS   : -0.105
+
+Type  : Fast 1200mV -40C Model Removal 'keyin[0]'
+Slack : -1.784
+TNS   : -41.465
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'keyin[0]'
+Slack : -3.000
+TNS   : -7.533
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'clk'
+Slack : 9.616
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'altpll1_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 14.763
+TNS   : 0.000
+
+------------------------------------------------------------

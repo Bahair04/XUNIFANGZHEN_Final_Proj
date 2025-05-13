@@ -1,5 +1,5 @@
 Flow report for FPGA
-Tue May 06 11:36:26 2025
+Tue May 13 15:18:55 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue May 06 11:36:26 2025       ;
+; Flow Status                        ; Successful - Tue May 13 15:18:55 2025       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; FPGA                                        ;
 ; Top-level Entity Name              ; FPGA                                        ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE40U19A7                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 649 / 39,600 ( 2 % )                        ;
-;     Total combinational functions  ; 600 / 39,600 ( 2 % )                        ;
-;     Dedicated logic registers      ; 235 / 39,600 ( < 1 % )                      ;
-; Total registers                    ; 235                                         ;
+; Total logic elements               ; 1,030 / 39,600 ( 3 % )                      ;
+;     Total combinational functions  ; 982 / 39,600 ( 2 % )                        ;
+;     Dedicated logic registers      ; 256 / 39,600 ( < 1 % )                      ;
+; Total registers                    ; 256                                         ;
 ; Total pins                         ; 36 / 329 ( 11 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 821,728 / 1,161,216 ( 71 % )                ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/06/2025 11:36:03 ;
+; Start date & time ; 05/13/2025 15:18:31 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; FPGA                ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 207724483731283.174650256331088       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 207724483731283.174712071116628       ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; tb_vga_pic     ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_vga_pic                            ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
@@ -115,12 +115,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4709 MB             ; 00:00:00                           ;
-; Fitter                    ; 00:00:12     ; 1.8                     ; 5902 MB             ; 00:00:03                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4611 MB             ; 00:00:00                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 2.5                     ; 4781 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4579 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:19     ; --                      ; --                  ; 00:00:03                           ;
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4713 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:11     ; 3.4                     ; 5918 MB             ; 00:00:04                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4607 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4807 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4583 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:20     ; --                      ; --                  ; 00:00:07                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

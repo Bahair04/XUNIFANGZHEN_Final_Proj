@@ -14,18 +14,44 @@ localparam HOR_SCREEN = 'd800;                      //屏幕宽度
 localparam VERT_SCREEN = 'd480;                     //屏幕高度
 localparam HOR_PIC = 'd160;
 localparam VERT_PIC = 'd160;
-localparam PIC_START_X = 'd500; // 列
-localparam PIC_START_Y = 'd200; // 行
+reg [9 : 0] PIC_START_X;
+reg [9 : 0] PIC_START_Y;
+reg [9 : 0] offset;
 reg rom_en;
 reg ram_rden;
 wire ram_data;
+always @(posedge clk or negedge rstn) begin
+    if (!rstn) begin
+        PIC_START_X <= 10'd500;
+        PIC_START_Y <= 10'd200;
+        offset <= 10'd0;
+    end
+    else if (keyin == 4'b1000) begin
+        if (pix_x == HOR_SCREEN - 1'b1 && pix_y == VERT_SCREEN - 1'b1) begin
+            if (PIC_START_X >= 2)
+                PIC_START_X <= PIC_START_X - 1'b1;
+            else if (offset == HOR_PIC - 1'b1 && pix_x == HOR_SCREEN - 1'b1 && pix_y == VERT_SCREEN - 1'b1) begin
+                offset <= 10'd0;
+                PIC_START_X <= 10'd500;
+                PIC_START_Y <= 10'd200;
+            end
+            else if (pix_x == HOR_SCREEN - 1'b1 && pix_y == VERT_SCREEN - 1'b1)
+                offset <= offset + 1'b1;
+        end
+    end
+    else begin
+        offset <= 10'd0;
+        PIC_START_X <= 10'd500;
+        PIC_START_Y <= 10'd200;
+    end
+end
 always @(posedge clk or negedge rstn) begin
     if (rstn == 1'b0) begin
         rom_en <= 1'b0;
         ram_rden <= 1'b0;
     end
-    else if (keyin == 4'b0001 || keyin == 4'b0010) begin
-        if (pix_x >= PIC_START_X && pix_x <= PIC_START_X + HOR_PIC - 1 && pix_y >= PIC_START_Y && pix_y <= PIC_START_Y + VERT_PIC - 1)
+    else if (keyin == 4'b0001 || keyin == 4'b0010 || keyin == 4'b1000) begin
+        if (pix_x >= PIC_START_X && pix_x <= PIC_START_X + HOR_PIC - 1 - offset && pix_y >= PIC_START_Y && pix_y <= PIC_START_Y + VERT_PIC - 1)
             rom_en <= 1'b1;
         else
             rom_en <= 1'b0;
@@ -45,11 +71,23 @@ always @(posedge clk or negedge rstn) begin
         rom_addr <= 16'd0;
         ram_addr <= 16'd0;
     end
-    else if (keyin == 4'b0001 || keyin == 4'b0010) begin
-        if (rom_en == 1'b1)
-            rom_addr <= rom_addr + 1'b1;
-        else if (pix_x == PIC_START_X + HOR_PIC && pix_y == PIC_START_Y + VERT_PIC )
-            rom_addr <= 16'd0;
+    else if (keyin == 4'b0001 || keyin == 4'b0010 || keyin == 4'b1000) begin
+        if (keyin == 4'b0001 || keyin == 4'b0010) begin
+            if (rom_en == 1'b1)
+                rom_addr <= rom_addr + 1'b1;
+            else if (pix_x == PIC_START_X + HOR_PIC && pix_y == PIC_START_Y + VERT_PIC )
+                rom_addr <= 16'd0;
+        end
+        else if (keyin == 4'b1000) begin
+            if (rom_en == 1'b1) begin
+                if (rom_addr - rom_addr / HOR_PIC * HOR_PIC == HOR_PIC - 1'b1)
+                    rom_addr <= (rom_addr / HOR_PIC + 1) * HOR_PIC + offset;
+                else 
+                    rom_addr <= rom_addr + 1'b1;
+            end
+            else if (pix_x == PIC_START_X + HOR_PIC && pix_y == PIC_START_Y + VERT_PIC)
+                rom_addr <= offset;
+        end
         if (data_valid == 1'b1 && ram_addr == (HOR_PIC - 2) * (VERT_PIC - 2) - 1)
             ram_addr <= 16'b0;
         else if (data_valid == 1'b1)
@@ -108,7 +146,7 @@ ram1 ram1_inst (
 always @(*) begin
     if (rom_en == 1'b0 && ram_rden == 1'b0)
         color_data_out <= 24'hFFFFFF;
-    else if (keyin == 4'b0001)
+    else if (keyin == 4'b0001 || keyin == 4'b1000)
         color_data_out <= color_data;
     else if (keyin == 4'b0010)
         color_data_out <= {gray_data, gray_data, gray_data};

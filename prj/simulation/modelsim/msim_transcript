@@ -84,7 +84,7 @@
 # Loading work.shiftreg
 # Loading altera_mf_ver.altshift_taps
 # Loading work.ram1
-# ** Warning: (vsim-3015) D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v(75): [PCDPC] - Port size (15 or 15) does not match connection size (16) for port 'address'. The port definition is at: D:/XUNIFANGZHEN/FPGA/prj/rom1.v(40).
+# ** Warning: (vsim-3015) D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v(113): [PCDPC] - Port size (15 or 15) does not match connection size (16) for port 'address'. The port definition is at: D:/XUNIFANGZHEN/FPGA/prj/rom1.v(40).
 # 
 #         Region: /tb_vga_pic/u_vga_pic/rom1_inst
 # ** Warning: (vsim-3017) D:/XUNIFANGZHEN/FPGA/rtl/sobel.v(47): [TFMPC] - Too few port connections. Expected 6, found 5.
@@ -92,7 +92,7 @@
 #         Region: /tb_vga_pic/u_vga_pic/u_sobel/shiftreg_inst
 # ** Warning: (vsim-3722) D:/XUNIFANGZHEN/FPGA/rtl/sobel.v(47): [TFMPC] - Missing connection for port 'shiftout'.
 # 
-# ** Warning: (vsim-3015) D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v(107): [PCDPC] - Port size (15 or 15) does not match connection size (16) for port 'address'. The port definition is at: D:/XUNIFANGZHEN/FPGA/prj/ram1.v(40).
+# ** Warning: (vsim-3015) D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v(145): [PCDPC] - Port size (15 or 15) does not match connection size (16) for port 'address'. The port definition is at: D:/XUNIFANGZHEN/FPGA/prj/ram1.v(40).
 # 
 #         Region: /tb_vga_pic/u_vga_pic/ram1_inst
 # 
@@ -109,3 +109,21 @@
 # Simulation Breakpoint: 1
 # Break in Module tb_vga_pic at D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v line 71
 # MACRO ./FPGA_run_msim_rtl_verilog.do PAUSED at line 25
+add wave -position insertpoint sim:/tb_vga_pic/u_vga_pic/*
+restart
+# ** Warning: (vsim-3015) D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v(113): [PCDPC] - Port size (15 or 15) does not match connection size (16) for port 'address'. The port definition is at: D:/XUNIFANGZHEN/FPGA/prj/rom1.v(40).
+# 
+#         Region: /tb_vga_pic/u_vga_pic/rom1_inst
+# ** Warning: (vsim-3017) D:/XUNIFANGZHEN/FPGA/rtl/sobel.v(47): [TFMPC] - Too few port connections. Expected 6, found 5.
+# 
+#         Region: /tb_vga_pic/u_vga_pic/u_sobel/shiftreg_inst
+# ** Warning: (vsim-3722) D:/XUNIFANGZHEN/FPGA/rtl/sobel.v(47): [TFMPC] - Missing connection for port 'shiftout'.
+# 
+# ** Warning: (vsim-3015) D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v(145): [PCDPC] - Port size (15 or 15) does not match connection size (16) for port 'address'. The port definition is at: D:/XUNIFANGZHEN/FPGA/prj/ram1.v(40).
+# 
+#         Region: /tb_vga_pic/u_vga_pic/ram1_inst
+run
+# ** Note: $finish    : D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v(71)
+#    Time: 15360 us  Iteration: 0  Instance: /tb_vga_pic
+# 1
+# Break in Module tb_vga_pic at D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v line 71

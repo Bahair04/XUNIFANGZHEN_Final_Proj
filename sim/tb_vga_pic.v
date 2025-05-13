@@ -31,7 +31,7 @@ begin
 end
 
 initial begin
-    keyin <= 4'b0001;
+    keyin <= 4'b1000;
     #(SIMU_TIME / 2) keyin <= 4'b0100;
 end
 

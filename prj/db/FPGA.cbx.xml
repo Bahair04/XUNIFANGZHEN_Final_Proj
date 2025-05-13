@@ -1,6 +1,7 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="FPGA">
+		<CBX_INST_ENTRY INSTANCE_NAME="|FPGA|vga_pic:vga_pic|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_6jm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FPGA|vga_pic:vga_pic|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_lgh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FPGA|altpll1:altpll1_inst|altpll:altpll_component" CBX_FILE_NAME="altpll1_altpll.v"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FPGA|vga_pic:vga_pic|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_kgh.tdf"/>

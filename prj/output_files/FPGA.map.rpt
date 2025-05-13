@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FPGA
-Tue May 06 11:36:05 2025
+Tue May 13 15:18:34 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -18,31 +18,33 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
  10. User-Specified and Inferred Latches
  11. Registers Removed During Synthesis
  12. General Register Statistics
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for vga_pic:vga_pic|rom1:rom1_inst|altsyncram:altsyncram_component|altsyncram_3sb1:auto_generated
- 15. Source assignments for vga_pic:vga_pic|sobel:u_sobel|shiftreg:shiftreg_inst|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_4rv:auto_generated|altsyncram_1ha1:altsyncram2
- 16. Source assignments for vga_pic:vga_pic|ram1:ram1_inst|altsyncram:altsyncram_component|altsyncram_4ug1:auto_generated
- 17. Parameter Settings for User Entity Instance: altpll1:altpll1_inst|altpll:altpll_component
- 18. Parameter Settings for User Entity Instance: vga_pic:vga_pic|rom1:rom1_inst|altsyncram:altsyncram_component
- 19. Parameter Settings for User Entity Instance: vga_pic:vga_pic|sobel:u_sobel
- 20. Parameter Settings for User Entity Instance: vga_pic:vga_pic|sobel:u_sobel|shiftreg:shiftreg_inst|altshift_taps:ALTSHIFT_TAPS_component
- 21. Parameter Settings for User Entity Instance: vga_pic:vga_pic|ram1:ram1_inst|altsyncram:altsyncram_component
- 22. Parameter Settings for User Entity Instance: vga_ctrl:vga_ctrl
- 23. Parameter Settings for Inferred Entity Instance: vga_pic:vga_pic|lpm_mult:Mult2
- 24. Parameter Settings for Inferred Entity Instance: vga_pic:vga_pic|lpm_mult:Mult1
- 25. Parameter Settings for Inferred Entity Instance: vga_pic:vga_pic|lpm_mult:Mult0
- 26. altpll Parameter Settings by Entity Instance
- 27. altsyncram Parameter Settings by Entity Instance
- 28. altshift_taps Parameter Settings by Entity Instance
- 29. lpm_mult Parameter Settings by Entity Instance
- 30. Port Connectivity Checks: "vga_ctrl:vga_ctrl"
- 31. Port Connectivity Checks: "vga_pic:vga_pic|ram1:ram1_inst"
- 32. Port Connectivity Checks: "vga_pic:vga_pic|sobel:u_sobel|shiftreg:shiftreg_inst"
- 33. Port Connectivity Checks: "vga_pic:vga_pic|rom1:rom1_inst"
- 34. Port Connectivity Checks: "vga_pic:vga_pic"
- 35. Elapsed Time Per Partition
- 36. Analysis & Synthesis Messages
- 37. Analysis & Synthesis Suppressed Messages
+ 13. Inverted Register Statistics
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Source assignments for vga_pic:vga_pic|rom1:rom1_inst|altsyncram:altsyncram_component|altsyncram_3sb1:auto_generated
+ 16. Source assignments for vga_pic:vga_pic|sobel:u_sobel|shiftreg:shiftreg_inst|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_4rv:auto_generated|altsyncram_1ha1:altsyncram2
+ 17. Source assignments for vga_pic:vga_pic|ram1:ram1_inst|altsyncram:altsyncram_component|altsyncram_4ug1:auto_generated
+ 18. Parameter Settings for User Entity Instance: altpll1:altpll1_inst|altpll:altpll_component
+ 19. Parameter Settings for User Entity Instance: vga_pic:vga_pic|rom1:rom1_inst|altsyncram:altsyncram_component
+ 20. Parameter Settings for User Entity Instance: vga_pic:vga_pic|sobel:u_sobel
+ 21. Parameter Settings for User Entity Instance: vga_pic:vga_pic|sobel:u_sobel|shiftreg:shiftreg_inst|altshift_taps:ALTSHIFT_TAPS_component
+ 22. Parameter Settings for User Entity Instance: vga_pic:vga_pic|ram1:ram1_inst|altsyncram:altsyncram_component
+ 23. Parameter Settings for User Entity Instance: vga_ctrl:vga_ctrl
+ 24. Parameter Settings for Inferred Entity Instance: vga_pic:vga_pic|lpm_mult:Mult2
+ 25. Parameter Settings for Inferred Entity Instance: vga_pic:vga_pic|lpm_mult:Mult1
+ 26. Parameter Settings for Inferred Entity Instance: vga_pic:vga_pic|lpm_mult:Mult0
+ 27. Parameter Settings for Inferred Entity Instance: vga_pic:vga_pic|lpm_divide:Div0
+ 28. altpll Parameter Settings by Entity Instance
+ 29. altsyncram Parameter Settings by Entity Instance
+ 30. altshift_taps Parameter Settings by Entity Instance
+ 31. lpm_mult Parameter Settings by Entity Instance
+ 32. Port Connectivity Checks: "vga_ctrl:vga_ctrl"
+ 33. Port Connectivity Checks: "vga_pic:vga_pic|ram1:ram1_inst"
+ 34. Port Connectivity Checks: "vga_pic:vga_pic|sobel:u_sobel|shiftreg:shiftreg_inst"
+ 35. Port Connectivity Checks: "vga_pic:vga_pic|rom1:rom1_inst"
+ 36. Port Connectivity Checks: "vga_pic:vga_pic"
+ 37. Elapsed Time Per Partition
+ 38. Analysis & Synthesis Messages
+ 39. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -68,15 +70,15 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue May 06 11:36:05 2025       ;
+; Analysis & Synthesis Status        ; Successful - Tue May 13 15:18:34 2025       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; FPGA                                        ;
 ; Top-level Entity Name              ; FPGA                                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 681                                         ;
-;     Total combinational functions  ; 600                                         ;
-;     Dedicated logic registers      ; 235                                         ;
-; Total registers                    ; 235                                         ;
+; Total logic elements               ; 1,063                                       ;
+;     Total combinational functions  ; 982                                         ;
+;     Dedicated logic registers      ; 256                                         ;
+; Total registers                    ; 256                                         ;
 ; Total pins                         ; 36                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 821,728                                     ;
@@ -254,6 +256,14 @@ applicable agreement for further details.
 ; altshift.tdf                     ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/altshift.tdf            ;         ;
 ; db/add_sub_lgh.tdf               ; yes             ; Auto-Generated Megafunction            ; D:/XUNIFANGZHEN/FPGA/prj/db/add_sub_lgh.tdf                            ;         ;
 ; db/add_sub_kgh.tdf               ; yes             ; Auto-Generated Megafunction            ; D:/XUNIFANGZHEN/FPGA/prj/db/add_sub_kgh.tdf                            ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_divide.tdf          ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/abs_divider.inc         ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/sign_div_unsign.inc     ;         ;
+; db/lpm_divide_6jm.tdf            ; yes             ; Auto-Generated Megafunction            ; D:/XUNIFANGZHEN/FPGA/prj/db/lpm_divide_6jm.tdf                         ;         ;
+; db/sign_div_unsign_ulh.tdf       ; yes             ; Auto-Generated Megafunction            ; D:/XUNIFANGZHEN/FPGA/prj/db/sign_div_unsign_ulh.tdf                    ;         ;
+; db/alt_u_div_g7f.tdf             ; yes             ; Auto-Generated Megafunction            ; D:/XUNIFANGZHEN/FPGA/prj/db/alt_u_div_g7f.tdf                          ;         ;
+; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction            ; D:/XUNIFANGZHEN/FPGA/prj/db/add_sub_7pc.tdf                            ;         ;
+; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction            ; D:/XUNIFANGZHEN/FPGA/prj/db/add_sub_8pc.tdf                            ;         ;
 +----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------+---------+
 
 
@@ -262,20 +272,20 @@ applicable agreement for further details.
 +---------------------------------------------+---------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                       ;
 +---------------------------------------------+---------------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 681                                                                                         ;
+; Estimated Total logic elements              ; 1,063                                                                                       ;
 ;                                             ;                                                                                             ;
-; Total combinational functions               ; 600                                                                                         ;
+; Total combinational functions               ; 982                                                                                         ;
 ; Logic element usage by number of LUT inputs ;                                                                                             ;
-;     -- 4 input functions                    ; 214                                                                                         ;
-;     -- 3 input functions                    ; 209                                                                                         ;
-;     -- <=2 input functions                  ; 177                                                                                         ;
+;     -- 4 input functions                    ; 301                                                                                         ;
+;     -- 3 input functions                    ; 330                                                                                         ;
+;     -- <=2 input functions                  ; 351                                                                                         ;
 ;                                             ;                                                                                             ;
 ; Logic elements by mode                      ;                                                                                             ;
-;     -- normal mode                          ; 333                                                                                         ;
-;     -- arithmetic mode                      ; 267                                                                                         ;
+;     -- normal mode                          ; 545                                                                                         ;
+;     -- arithmetic mode                      ; 437                                                                                         ;
 ;                                             ;                                                                                             ;
-; Total registers                             ; 235                                                                                         ;
-;     -- Dedicated logic registers            ; 235                                                                                         ;
+; Total registers                             ; 256                                                                                         ;
+;     -- Dedicated logic registers            ; 256                                                                                         ;
 ;     -- I/O registers                        ; 0                                                                                           ;
 ;                                             ;                                                                                             ;
 ; I/O pins                                    ; 36                                                                                          ;
@@ -285,9 +295,9 @@ applicable agreement for further details.
 ;     -- PLLs                                 ; 1                                                                                           ;
 ;                                             ;                                                                                             ;
 ; Maximum fan-out node                        ; altpll1:altpll1_inst|altpll:altpll_component|altpll1_altpll:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 353                                                                                         ;
-; Total fan-out                               ; 4557                                                                                        ;
-; Average fan-out                             ; 4.45                                                                                        ;
+; Maximum fan-out                             ; 374                                                                                         ;
+; Total fan-out                               ; 5661                                                                                        ;
+; Average fan-out                             ; 3.97                                                                                        ;
 +---------------------------------------------+---------------------------------------------------------------------------------------------+
 
 
@@ -296,12 +306,16 @@ applicable agreement for further details.
 +-----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                          ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                          ; Library Name ;
 +-----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |FPGA                                               ; 600 (1)           ; 235 (0)      ; 821728      ; 0            ; 0       ; 0         ; 36   ; 0            ; |FPGA                                                                                                                                                        ; work         ;
+; |FPGA                                               ; 982 (1)           ; 256 (0)      ; 821728      ; 0            ; 0       ; 0         ; 36   ; 0            ; |FPGA                                                                                                                                                        ; work         ;
 ;    |altpll1:altpll1_inst|                           ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|altpll1:altpll1_inst                                                                                                                                   ; work         ;
 ;       |altpll:altpll_component|                     ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|altpll1:altpll1_inst|altpll:altpll_component                                                                                                           ; work         ;
 ;          |altpll1_altpll:auto_generated|            ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|altpll1:altpll1_inst|altpll:altpll_component|altpll1_altpll:auto_generated                                                                             ; work         ;
-;    |vga_ctrl:vga_ctrl|                              ; 102 (102)         ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_ctrl:vga_ctrl                                                                                                                                      ; work         ;
-;    |vga_pic:vga_pic|                                ; 497 (170)         ; 211 (41)     ; 821728      ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic                                                                                                                                        ; work         ;
+;    |vga_ctrl:vga_ctrl|                              ; 112 (112)         ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_ctrl:vga_ctrl                                                                                                                                      ; work         ;
+;    |vga_pic:vga_pic|                                ; 869 (383)         ; 232 (62)     ; 821728      ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic                                                                                                                                        ; work         ;
+;       |lpm_divide:Div0|                             ; 158 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic|lpm_divide:Div0                                                                                                                        ; work         ;
+;          |lpm_divide_6jm:auto_generated|            ; 158 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic|lpm_divide:Div0|lpm_divide_6jm:auto_generated                                                                                          ; work         ;
+;             |sign_div_unsign_ulh:divider|           ; 158 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic|lpm_divide:Div0|lpm_divide_6jm:auto_generated|sign_div_unsign_ulh:divider                                                              ; work         ;
+;                |alt_u_div_g7f:divider|              ; 158 (158)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic|lpm_divide:Div0|lpm_divide_6jm:auto_generated|sign_div_unsign_ulh:divider|alt_u_div_g7f:divider                                        ; work         ;
 ;       |lpm_mult:Mult0|                              ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic|lpm_mult:Mult0                                                                                                                         ; work         ;
 ;          |multcore:mult_core|                       ; 30 (19)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic|lpm_mult:Mult0|multcore:mult_core                                                                                                      ; work         ;
 ;             |mpar_add:padder|                       ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                                                      ; work         ;
@@ -323,11 +337,11 @@ applicable agreement for further details.
 ;                |decode_msa:decode3|                 ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic|ram1:ram1_inst|altsyncram:altsyncram_component|altsyncram_4ug1:auto_generated|decode_msa:decode3                                       ; work         ;
 ;                |decode_msa:rden_decode|             ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic|ram1:ram1_inst|altsyncram:altsyncram_component|altsyncram_4ug1:auto_generated|decode_msa:rden_decode                                   ; work         ;
 ;                |mux_vmb:mux2|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic|ram1:ram1_inst|altsyncram:altsyncram_component|altsyncram_4ug1:auto_generated|mux_vmb:mux2                                             ; work         ;
-;       |rom1:rom1_inst|                              ; 47 (0)            ; 5 (0)        ; 786432      ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic|rom1:rom1_inst                                                                                                                         ; work         ;
-;          |altsyncram:altsyncram_component|          ; 47 (0)            ; 5 (0)        ; 786432      ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic|rom1:rom1_inst|altsyncram:altsyncram_component                                                                                         ; work         ;
-;             |altsyncram_3sb1:auto_generated|        ; 47 (0)            ; 5 (5)        ; 786432      ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic|rom1:rom1_inst|altsyncram:altsyncram_component|altsyncram_3sb1:auto_generated                                                          ; work         ;
+;       |rom1:rom1_inst|                              ; 48 (0)            ; 5 (0)        ; 786432      ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic|rom1:rom1_inst                                                                                                                         ; work         ;
+;          |altsyncram:altsyncram_component|          ; 48 (0)            ; 5 (0)        ; 786432      ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic|rom1:rom1_inst|altsyncram:altsyncram_component                                                                                         ; work         ;
+;             |altsyncram_3sb1:auto_generated|        ; 48 (0)            ; 5 (5)        ; 786432      ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic|rom1:rom1_inst|altsyncram:altsyncram_component|altsyncram_3sb1:auto_generated                                                          ; work         ;
 ;                |decode_msa:rden_decode|             ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic|rom1:rom1_inst|altsyncram:altsyncram_component|altsyncram_3sb1:auto_generated|decode_msa:rden_decode                                   ; work         ;
-;                |mux_kob:mux2|                       ; 43 (43)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic|rom1:rom1_inst|altsyncram:altsyncram_component|altsyncram_3sb1:auto_generated|mux_kob:mux2                                             ; work         ;
+;                |mux_kob:mux2|                       ; 44 (44)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic|rom1:rom1_inst|altsyncram:altsyncram_component|altsyncram_3sb1:auto_generated|mux_kob:mux2                                             ; work         ;
 ;       |sobel:u_sobel|                               ; 184 (172)         ; 161 (153)    ; 2528        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic|sobel:u_sobel                                                                                                                          ; work         ;
 ;          |shiftreg:shiftreg_inst|                   ; 12 (0)            ; 8 (0)        ; 2528        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic|sobel:u_sobel|shiftreg:shiftreg_inst                                                                                                   ; work         ;
 ;             |altshift_taps:ALTSHIFT_TAPS_component| ; 12 (0)            ; 8 (0)        ; 2528        ; 0            ; 0       ; 0         ; 0    ; 0            ; |FPGA|vga_pic:vga_pic|sobel:u_sobel|shiftreg:shiftreg_inst|altshift_taps:ALTSHIFT_TAPS_component                                                             ; work         ;
@@ -396,16 +410,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+------------------------------------------------------------+
-; Registers Removed During Synthesis                         ;
-+---------------------------------------+--------------------+
-; Register name                         ; Reason for Removal ;
-+---------------------------------------+--------------------+
-; vga_pic:vga_pic|sobel:u_sobel|Gx[8,9] ; Lost fanout        ;
-; vga_pic:vga_pic|sobel:u_sobel|Gy[8,9] ; Lost fanout        ;
-; vga_pic:vga_pic|rom_addr[15]          ; Lost fanout        ;
-; Total Number of Removed Registers = 5 ;                    ;
-+---------------------------------------+--------------------+
++---------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                    ;
++------------------------------------------+--------------------------------------------+
+; Register name                            ; Reason for Removal                         ;
++------------------------------------------+--------------------------------------------+
+; vga_pic:vga_pic|sobel:u_sobel|Gx[8,9]    ; Lost fanout                                ;
+; vga_pic:vga_pic|sobel:u_sobel|Gy[8,9]    ; Lost fanout                                ;
+; vga_pic:vga_pic|PIC_START_Y[1,2,4,5,8,9] ; Merged with vga_pic:vga_pic|PIC_START_Y[0] ;
+; vga_pic:vga_pic|PIC_START_Y[6,7]         ; Merged with vga_pic:vga_pic|PIC_START_Y[3] ;
+; vga_pic:vga_pic|PIC_START_Y[0]           ; Stuck at GND due to stuck port data_in     ;
+; vga_pic:vga_pic|PIC_START_Y[3]           ; Stuck at VCC due to stuck port data_in     ;
+; Total Number of Removed Registers = 14   ;                                            ;
++------------------------------------------+--------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -413,14 +430,29 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 235   ;
+; Total registers                              ; 256   ;
 ; Number of registers using Synchronous Clear  ; 31    ;
-; Number of registers using Synchronous Load   ; 24    ;
-; Number of registers using Asynchronous Clear ; 218   ;
+; Number of registers using Synchronous Load   ; 29    ;
+; Number of registers using Asynchronous Clear ; 239   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 131   ;
+; Number of registers using Clock Enable       ; 142   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; vga_pic:vga_pic|PIC_START_X[6]         ; 9       ;
+; vga_pic:vga_pic|PIC_START_X[5]         ; 11      ;
+; vga_pic:vga_pic|PIC_START_X[7]         ; 8       ;
+; vga_pic:vga_pic|PIC_START_X[8]         ; 8       ;
+; vga_pic:vga_pic|PIC_START_X[4]         ; 6       ;
+; vga_pic:vga_pic|PIC_START_X[2]         ; 6       ;
+; Total number of inverted registers = 6 ;         ;
++----------------------------------------+---------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -428,11 +460,16 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
-; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |FPGA|vga_ctrl:vga_ctrl|cntv[7]                ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |FPGA|vga_ctrl:vga_ctrl|cntv[10]               ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |FPGA|vga_pic:vga_pic|sobel:u_sobel|cnt_row[0] ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |FPGA|vga_pic:vga_pic|sobel:u_sobel|cnt_col[4] ;
-; 6:1                ; 16 bits   ; 64 LEs        ; 16 LEs               ; 48 LEs                 ; Yes        ; |FPGA|vga_pic:vga_pic|rom_addr[5]              ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 16 LEs               ; 64 LEs                 ; Yes        ; |FPGA|vga_pic:vga_pic|ram_addr[3]              ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |FPGA|vga_pic:vga_pic|sobel:u_sobel|cnt_col[1] ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |FPGA|vga_pic:vga_pic|PIC_START_X[9]           ;
+; 6:1                ; 10 bits   ; 40 LEs        ; 10 LEs               ; 30 LEs                 ; Yes        ; |FPGA|vga_pic:vga_pic|offset[7]                ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 16 LEs               ; 64 LEs                 ; Yes        ; |FPGA|vga_pic:vga_pic|ram_addr[11]             ;
+; 9:1                ; 6 bits    ; 36 LEs        ; 12 LEs               ; 24 LEs                 ; Yes        ; |FPGA|vga_pic:vga_pic|rom_addr[14]             ;
+; 11:1               ; 5 bits    ; 35 LEs        ; 10 LEs               ; 25 LEs                 ; Yes        ; |FPGA|vga_pic:vga_pic|rom_addr[0]              ;
+; 11:1               ; 5 bits    ; 35 LEs        ; 10 LEs               ; 25 LEs                 ; Yes        ; |FPGA|vga_pic:vga_pic|rom_addr[5]              ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |FPGA|vga_pic:vga_pic|PIC_START_X[6]           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
 
 
@@ -1115,6 +1152,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: vga_pic:vga_pic|lpm_divide:Div0 ;
++------------------------+----------------+----------------------------------------+
+; Parameter Name         ; Value          ; Type                                   ;
++------------------------+----------------+----------------------------------------+
+; LPM_WIDTHN             ; 16             ; Untyped                                ;
+; LPM_WIDTHD             ; 8              ; Untyped                                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
+; LPM_PIPELINE           ; 0              ; Untyped                                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                ;
+; CBXI_PARAMETER         ; lpm_divide_6jm ; Untyped                                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                         ;
++------------------------+----------------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +------------------------------------------------------------------------------+
 ; altpll Parameter Settings by Entity Instance                                 ;
 +-------------------------------+----------------------------------------------+
@@ -1281,7 +1341,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Tue May 06 11:36:02 2025
+    Info: Processing started: Tue May 13 15:18:31 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FPGA -c FPGA
 Info (11104): Parallel Compilation has detected 16 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 10 of the 10 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file /xunifangzhen/fpga/sim/tb_vga_pic.v
@@ -1368,32 +1428,33 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/altp
     Info (12023): Found entity 1: altpll1_altpll
 Info (12128): Elaborating entity "altpll1_altpll" for hierarchy "altpll1:altpll1_inst|altpll:altpll_component|altpll1_altpll:auto_generated"
 Info (12128): Elaborating entity "vga_pic" for hierarchy "vga_pic:vga_pic"
-Warning (10230): Verilog HDL assignment warning at vga_pic.v(82): truncated value with size 32 to match size of target (8)
-Warning (10240): Verilog HDL Always Construct warning at vga_pic.v(109): inferring latch(es) for variable "color_data_out", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "color_data_out[0]" at vga_pic.v(109)
-Info (10041): Inferred latch for "color_data_out[1]" at vga_pic.v(109)
-Info (10041): Inferred latch for "color_data_out[2]" at vga_pic.v(109)
-Info (10041): Inferred latch for "color_data_out[3]" at vga_pic.v(109)
-Info (10041): Inferred latch for "color_data_out[4]" at vga_pic.v(109)
-Info (10041): Inferred latch for "color_data_out[5]" at vga_pic.v(109)
-Info (10041): Inferred latch for "color_data_out[6]" at vga_pic.v(109)
-Info (10041): Inferred latch for "color_data_out[7]" at vga_pic.v(109)
-Info (10041): Inferred latch for "color_data_out[8]" at vga_pic.v(109)
-Info (10041): Inferred latch for "color_data_out[9]" at vga_pic.v(109)
-Info (10041): Inferred latch for "color_data_out[10]" at vga_pic.v(109)
-Info (10041): Inferred latch for "color_data_out[11]" at vga_pic.v(109)
-Info (10041): Inferred latch for "color_data_out[12]" at vga_pic.v(109)
-Info (10041): Inferred latch for "color_data_out[13]" at vga_pic.v(109)
-Info (10041): Inferred latch for "color_data_out[14]" at vga_pic.v(109)
-Info (10041): Inferred latch for "color_data_out[15]" at vga_pic.v(109)
-Info (10041): Inferred latch for "color_data_out[16]" at vga_pic.v(109)
-Info (10041): Inferred latch for "color_data_out[17]" at vga_pic.v(109)
-Info (10041): Inferred latch for "color_data_out[18]" at vga_pic.v(109)
-Info (10041): Inferred latch for "color_data_out[19]" at vga_pic.v(109)
-Info (10041): Inferred latch for "color_data_out[20]" at vga_pic.v(109)
-Info (10041): Inferred latch for "color_data_out[21]" at vga_pic.v(109)
-Info (10041): Inferred latch for "color_data_out[22]" at vga_pic.v(109)
-Info (10041): Inferred latch for "color_data_out[23]" at vga_pic.v(109)
+Warning (10230): Verilog HDL assignment warning at vga_pic.v(84): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at vga_pic.v(120): truncated value with size 32 to match size of target (8)
+Warning (10240): Verilog HDL Always Construct warning at vga_pic.v(147): inferring latch(es) for variable "color_data_out", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "color_data_out[0]" at vga_pic.v(147)
+Info (10041): Inferred latch for "color_data_out[1]" at vga_pic.v(147)
+Info (10041): Inferred latch for "color_data_out[2]" at vga_pic.v(147)
+Info (10041): Inferred latch for "color_data_out[3]" at vga_pic.v(147)
+Info (10041): Inferred latch for "color_data_out[4]" at vga_pic.v(147)
+Info (10041): Inferred latch for "color_data_out[5]" at vga_pic.v(147)
+Info (10041): Inferred latch for "color_data_out[6]" at vga_pic.v(147)
+Info (10041): Inferred latch for "color_data_out[7]" at vga_pic.v(147)
+Info (10041): Inferred latch for "color_data_out[8]" at vga_pic.v(147)
+Info (10041): Inferred latch for "color_data_out[9]" at vga_pic.v(147)
+Info (10041): Inferred latch for "color_data_out[10]" at vga_pic.v(147)
+Info (10041): Inferred latch for "color_data_out[11]" at vga_pic.v(147)
+Info (10041): Inferred latch for "color_data_out[12]" at vga_pic.v(147)
+Info (10041): Inferred latch for "color_data_out[13]" at vga_pic.v(147)
+Info (10041): Inferred latch for "color_data_out[14]" at vga_pic.v(147)
+Info (10041): Inferred latch for "color_data_out[15]" at vga_pic.v(147)
+Info (10041): Inferred latch for "color_data_out[16]" at vga_pic.v(147)
+Info (10041): Inferred latch for "color_data_out[17]" at vga_pic.v(147)
+Info (10041): Inferred latch for "color_data_out[18]" at vga_pic.v(147)
+Info (10041): Inferred latch for "color_data_out[19]" at vga_pic.v(147)
+Info (10041): Inferred latch for "color_data_out[20]" at vga_pic.v(147)
+Info (10041): Inferred latch for "color_data_out[21]" at vga_pic.v(147)
+Info (10041): Inferred latch for "color_data_out[22]" at vga_pic.v(147)
+Info (10041): Inferred latch for "color_data_out[23]" at vga_pic.v(147)
 Info (12128): Elaborating entity "rom1" for hierarchy "vga_pic:vga_pic|rom1:rom1_inst"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_pic:vga_pic|rom1:rom1_inst|altsyncram:altsyncram_component"
 Info (12130): Elaborated megafunction instantiation "vga_pic:vga_pic|rom1:rom1_inst|altsyncram:altsyncram_component"
@@ -1474,10 +1535,11 @@ Info (12128): Elaborating entity "mux_vmb" for hierarchy "vga_pic:vga_pic|ram1:r
 Info (12128): Elaborating entity "vga_ctrl" for hierarchy "vga_ctrl:vga_ctrl"
 Warning (10230): Verilog HDL assignment warning at vga_ctrl.v(93): truncated value with size 32 to match size of target (10)
 Warning (10230): Verilog HDL assignment warning at vga_ctrl.v(94): truncated value with size 32 to match size of target (10)
-Info (278001): Inferred 3 megafunctions from design logic
+Info (278001): Inferred 4 megafunctions from design logic
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "vga_pic:vga_pic|Mult2"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "vga_pic:vga_pic|Mult1"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "vga_pic:vga_pic|Mult0"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_pic:vga_pic|Div0"
 Info (12130): Elaborated megafunction instantiation "vga_pic:vga_pic|lpm_mult:Mult2"
 Info (12133): Instantiated megafunction "vga_pic:vga_pic|lpm_mult:Mult2" with the following parameter:
     Info (12134): Parameter "LPM_WIDTHA" = "8"
@@ -1529,6 +1591,22 @@ Info (12131): Elaborated megafunction instantiation "vga_pic:vga_pic|lpm_mult:Mu
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_kgh.tdf
     Info (12023): Found entity 1: add_sub_kgh
 Info (12131): Elaborated megafunction instantiation "vga_pic:vga_pic|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "vga_pic:vga_pic|lpm_mult:Mult0"
+Info (12130): Elaborated megafunction instantiation "vga_pic:vga_pic|lpm_divide:Div0"
+Info (12133): Instantiated megafunction "vga_pic:vga_pic|lpm_divide:Div0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "16"
+    Info (12134): Parameter "LPM_WIDTHD" = "8"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_6jm.tdf
+    Info (12023): Found entity 1: lpm_divide_6jm
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_ulh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_ulh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_g7f.tdf
+    Info (12023): Found entity 1: alt_u_div_g7f
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
+    Info (12023): Found entity 1: add_sub_7pc
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
+    Info (12023): Found entity 1: add_sub_8pc
 Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13012): Latch vga_pic:vga_pic|color_data_out[16] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal keyin[0]
@@ -1578,25 +1656,27 @@ Warning (13012): Latch vga_pic:vga_pic|color_data_out[6] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal keyin[0]
 Warning (13012): Latch vga_pic:vga_pic|color_data_out[7] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal keyin[0]
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LCD_HS" is stuck at VCC
     Warning (13410): Pin "LCD_VS" is stuck at VCC
     Warning (13410): Pin "LCD_RST" is stuck at VCC
     Warning (13410): Pin "LCD_BL" is stuck at VCC
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 5 registers lost all their fanouts during netlist optimizations.
+Info (17049): 4 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file D:/XUNIFANGZHEN/FPGA/prj/output_files/FPGA.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 834 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1216 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 30 output pins
-    Info (21061): Implemented 681 logic cells
+    Info (21061): Implemented 1063 logic cells
     Info (21064): Implemented 116 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 62 warnings
-    Info: Peak virtual memory: 4709 megabytes
-    Info: Processing ended: Tue May 06 11:36:05 2025
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 63 warnings
+    Info: Peak virtual memory: 4713 megabytes
+    Info: Processing ended: Tue May 13 15:18:34 2025
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:01
 

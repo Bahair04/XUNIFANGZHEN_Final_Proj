@@ -10,6 +10,7 @@ entity vga_pic is
         keyin           : in     vl_logic_vector(3 downto 0);
         pix_x           : in     vl_logic_vector(9 downto 0);
         pix_y           : in     vl_logic_vector(9 downto 0);
+        data_cnt        : in     vl_logic_vector(9 downto 0);
         color_data_out  : out    vl_logic_vector(23 downto 0)
     );
 end vga_pic;

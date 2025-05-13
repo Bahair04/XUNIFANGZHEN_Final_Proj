@@ -7,6 +7,7 @@ module vga_pic (
     input wire [3 : 0] keyin,                       //按键输入
     input wire [9 : 0] pix_x,                       //当前像素横坐标
     input wire [9 : 0] pix_y,                       //当前像素纵坐标
+    input wire [9 : 0] data_cnt,
     output reg [23 : 0] color_data_out              //颜色数据
 );
 
@@ -14,10 +15,13 @@ localparam HOR_SCREEN = 'd800;                      //屏幕宽度
 localparam VERT_SCREEN = 'd480;                     //屏幕高度
 localparam HOR_PIC = 'd160;
 localparam VERT_PIC = 'd160;
+localparam CNT_START_X = 'd650;
+localparam CNT_START_Y = 'd100;
 reg [9 : 0] PIC_START_X;
 reg [9 : 0] PIC_START_Y;
 reg [9 : 0] offset;
 reg rom_en;
+reg rom_en1;
 reg ram_rden;
 wire ram_data;
 always @(posedge clk or negedge rstn) begin
@@ -48,13 +52,18 @@ end
 always @(posedge clk or negedge rstn) begin
     if (rstn == 1'b0) begin
         rom_en <= 1'b0;
+        rom_en1 <= 1'b0;
         ram_rden <= 1'b0;
     end
     else if (keyin == 4'b0001 || keyin == 4'b0010 || keyin == 4'b1000) begin
         if (pix_x >= PIC_START_X && pix_x <= PIC_START_X + HOR_PIC - 1 - offset && pix_y >= PIC_START_Y && pix_y <= PIC_START_Y + VERT_PIC - 1)
             rom_en <= 1'b1;
-        else
+        else if (pix_x >= CNT_START_X && pix_x <= CNT_START_X + 3 * 8 - 1 && pix_y >= CNT_START_Y && pix_y <= CNT_START_Y + 16 - 1)
+            rom_en1 <= 1'b1;
+        else begin
             rom_en <= 1'b0;
+            rom_en1 <= 1'b0;
+        end
     end
     else if (keyin == 4'b0100) begin
         if (pix_x >= PIC_START_X && pix_x <= PIC_START_X + HOR_PIC - 1 - 2 && pix_y >= PIC_START_Y && pix_y <= PIC_START_Y + VERT_PIC - 1 - 2)
@@ -73,8 +82,23 @@ always @(posedge clk or negedge rstn) begin
     end
     else if (keyin == 4'b0001 || keyin == 4'b0010 || keyin == 4'b1000) begin
         if (keyin == 4'b0001 || keyin == 4'b0010) begin
-            if (rom_en == 1'b1)
-                rom_addr <= rom_addr + 1'b1;
+            if (rom_en == 1'b1 || rom_en1 == 1'b1) begin
+                if (rom_en)
+                    rom_addr <= rom_addr + 1'b1;
+                else if (rom_en1) begin
+                    if (pix_x >= CNT_START_X && pix_x <= CNT_START_X + 8 - 1) begin
+                        rom_addr <= (16'h6400 + 16'h80 * (data_cnt / 100)) + (pix_x - CNT_START_X) + 8 * (pix_y - CNT_START_Y);
+                    end
+                    else if (pix_x >= CNT_START_X + 8 && pix_x <= CNT_START_X + 2 * 8 - 1) begin
+                        rom_addr <= (16'h6400 + 16'h80 * (data_cnt / 10 % 10)) + (pix_x - CNT_START_X) + 8 * (pix_y - CNT_START_Y);
+                    end
+                    else if (pix_x >= CNT_START_X + 2 * 8 && pix_x <= CNT_START_X + 3 * 8 - 1) begin
+                        rom_addr <= (16'h6400 + 16'h80 * (data_cnt % 10)) + (pix_x - CNT_START_X) + 8 * (pix_y - CNT_START_Y);
+                    end
+                end
+            end
+            else if (rom_en == 1'b0 && rom_en1 == 1'b0)
+                rom_addr <= 16'd0;
             else if (pix_x == PIC_START_X + HOR_PIC && pix_y == PIC_START_Y + VERT_PIC )
                 rom_addr <= 16'd0;
         end
@@ -109,7 +133,7 @@ rom1 rom1_inst (
 	.address ( rom_addr ),
 	.clock ( clk ),
 	.q ( color_data ),
-    .rden( rom_en )
+    .rden( rom_en | rom_en1 )
 );
 reg [7 : 0] gray_data;
 always @(posedge clk or negedge rstn) begin
@@ -144,7 +168,7 @@ ram1 ram1_inst (
 	.q ( ram_data )
 );
 always @(*) begin
-    if (rom_en == 1'b0 && ram_rden == 1'b0)
+    if (rom_en == 1'b0 && ram_rden == 1'b0 && rom_en1 == 1'b0)
         color_data_out <= 24'hFFFFFF;
     else if (keyin == 4'b0001 || keyin == 4'b1000)
         color_data_out <= color_data;

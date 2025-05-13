@@ -10,6 +10,12 @@
 # ** Warning: Copied D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
+# vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/rtl {D:/XUNIFANGZHEN/FPGA/rtl/clk_divx.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clk_divx
+# 
+# Top level modules:
+# 	clk_divx
 # vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/rtl {D:/XUNIFANGZHEN/FPGA/rtl/FPGA.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module FPGA
@@ -84,7 +90,12 @@
 # Loading work.shiftreg
 # Loading altera_mf_ver.altshift_taps
 # Loading work.ram1
-# ** Warning: (vsim-3015) D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v(113): [PCDPC] - Port size (15 or 15) does not match connection size (16) for port 'address'. The port definition is at: D:/XUNIFANGZHEN/FPGA/prj/rom1.v(40).
+# ** Warning: (vsim-3017) D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v(67): [TFMPC] - Too few port connections. Expected 10, found 9.
+# 
+#         Region: /tb_vga_pic/u_vga_pic
+# ** Warning: (vsim-3722) D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v(67): [TFMPC] - Missing connection for port 'data_cnt'.
+# 
+# ** Warning: (vsim-3015) D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v(137): [PCDPC] - Port size (15 or 15) does not match connection size (16) for port 'address'. The port definition is at: D:/XUNIFANGZHEN/FPGA/prj/rom1.v(40).
 # 
 #         Region: /tb_vga_pic/u_vga_pic/rom1_inst
 # ** Warning: (vsim-3017) D:/XUNIFANGZHEN/FPGA/rtl/sobel.v(47): [TFMPC] - Too few port connections. Expected 6, found 5.
@@ -92,7 +103,7 @@
 #         Region: /tb_vga_pic/u_vga_pic/u_sobel/shiftreg_inst
 # ** Warning: (vsim-3722) D:/XUNIFANGZHEN/FPGA/rtl/sobel.v(47): [TFMPC] - Missing connection for port 'shiftout'.
 # 
-# ** Warning: (vsim-3015) D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v(145): [PCDPC] - Port size (15 or 15) does not match connection size (16) for port 'address'. The port definition is at: D:/XUNIFANGZHEN/FPGA/prj/ram1.v(40).
+# ** Warning: (vsim-3015) D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v(169): [PCDPC] - Port size (15 or 15) does not match connection size (16) for port 'address'. The port definition is at: D:/XUNIFANGZHEN/FPGA/prj/ram1.v(40).
 # 
 #         Region: /tb_vga_pic/u_vga_pic/ram1_inst
 # 
@@ -102,16 +113,14 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: $finish    : D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v(71)
-#    Time: 15360 us  Iteration: 0  Instance: /tb_vga_pic
-# 1
-# Break in Module tb_vga_pic at D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v line 71
-# Simulation Breakpoint: 1
-# Break in Module tb_vga_pic at D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v line 71
-# MACRO ./FPGA_run_msim_rtl_verilog.do PAUSED at line 25
 add wave -position insertpoint sim:/tb_vga_pic/u_vga_pic/*
 restart
-# ** Warning: (vsim-3015) D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v(113): [PCDPC] - Port size (15 or 15) does not match connection size (16) for port 'address'. The port definition is at: D:/XUNIFANGZHEN/FPGA/prj/rom1.v(40).
+# ** Warning: (vsim-3017) D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v(67): [TFMPC] - Too few port connections. Expected 10, found 9.
+# 
+#         Region: /tb_vga_pic/u_vga_pic
+# ** Warning: (vsim-3722) D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v(67): [TFMPC] - Missing connection for port 'data_cnt'.
+# 
+# ** Warning: (vsim-3015) D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v(137): [PCDPC] - Port size (15 or 15) does not match connection size (16) for port 'address'. The port definition is at: D:/XUNIFANGZHEN/FPGA/prj/rom1.v(40).
 # 
 #         Region: /tb_vga_pic/u_vga_pic/rom1_inst
 # ** Warning: (vsim-3017) D:/XUNIFANGZHEN/FPGA/rtl/sobel.v(47): [TFMPC] - Too few port connections. Expected 6, found 5.
@@ -119,7 +128,277 @@ restart
 #         Region: /tb_vga_pic/u_vga_pic/u_sobel/shiftreg_inst
 # ** Warning: (vsim-3722) D:/XUNIFANGZHEN/FPGA/rtl/sobel.v(47): [TFMPC] - Missing connection for port 'shiftout'.
 # 
-# ** Warning: (vsim-3015) D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v(145): [PCDPC] - Port size (15 or 15) does not match connection size (16) for port 'address'. The port definition is at: D:/XUNIFANGZHEN/FPGA/prj/ram1.v(40).
+# ** Warning: (vsim-3015) D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v(169): [PCDPC] - Port size (15 or 15) does not match connection size (16) for port 'address'. The port definition is at: D:/XUNIFANGZHEN/FPGA/prj/ram1.v(40).
+# 
+#         Region: /tb_vga_pic/u_vga_pic/ram1_inst
+run -continue
+# ** Note: $finish    : D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v(71)
+#    Time: 15360 us  Iteration: 0  Instance: /tb_vga_pic
+# 1
+# Break in Module tb_vga_pic at D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v line 71
+do FPGA_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/rtl {D:/XUNIFANGZHEN/FPGA/rtl/clk_divx.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clk_divx
+# 
+# Top level modules:
+# 	clk_divx
+# vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/rtl {D:/XUNIFANGZHEN/FPGA/rtl/FPGA.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FPGA
+# 
+# Top level modules:
+# 	FPGA
+# vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/rtl {D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_pic
+# 
+# Top level modules:
+# 	vga_pic
+# vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/rtl {D:/XUNIFANGZHEN/FPGA/rtl/vga_ctrl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_ctrl
+# 
+# Top level modules:
+# 	vga_ctrl
+# vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/rtl {D:/XUNIFANGZHEN/FPGA/rtl/sobel.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sobel
+# 
+# Top level modules:
+# 	sobel
+# vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/prj {D:/XUNIFANGZHEN/FPGA/prj/ram1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram1
+# 
+# Top level modules:
+# 	ram1
+# vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/prj {D:/XUNIFANGZHEN/FPGA/prj/altpll1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altpll1
+# 
+# Top level modules:
+# 	altpll1
+# vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/prj {D:/XUNIFANGZHEN/FPGA/prj/rom1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module rom1
+# 
+# Top level modules:
+# 	rom1
+# vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/prj {D:/XUNIFANGZHEN/FPGA/prj/shiftreg.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module shiftreg
+# 
+# Top level modules:
+# 	shiftreg
+# vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/prj/db {D:/XUNIFANGZHEN/FPGA/prj/db/altpll1_altpll.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altpll1_altpll
+# 
+# Top level modules:
+# 	altpll1_altpll
+# 
+# vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/prj/../sim {D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_vga_pic
+# 
+# Top level modules:
+# 	tb_vga_pic
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_vga_pic
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_vga_pic 
+# Loading work.tb_vga_pic
+# Loading work.vga_pic
+# Loading work.rom1
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.sobel
+# Loading work.shiftreg
+# Loading altera_mf_ver.altshift_taps
+# Loading work.ram1
+# ** Warning: (vsim-3017) D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v(67): [TFMPC] - Too few port connections. Expected 10, found 9.
+# 
+#         Region: /tb_vga_pic/u_vga_pic
+# ** Warning: (vsim-3722) D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v(67): [TFMPC] - Missing connection for port 'data_cnt'.
+# 
+# ** Warning: (vsim-3015) D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v(137): [PCDPC] - Port size (15 or 15) does not match connection size (16) for port 'address'. The port definition is at: D:/XUNIFANGZHEN/FPGA/prj/rom1.v(40).
+# 
+#         Region: /tb_vga_pic/u_vga_pic/rom1_inst
+# ** Warning: (vsim-3017) D:/XUNIFANGZHEN/FPGA/rtl/sobel.v(47): [TFMPC] - Too few port connections. Expected 6, found 5.
+# 
+#         Region: /tb_vga_pic/u_vga_pic/u_sobel/shiftreg_inst
+# ** Warning: (vsim-3722) D:/XUNIFANGZHEN/FPGA/rtl/sobel.v(47): [TFMPC] - Missing connection for port 'shiftout'.
+# 
+# ** Warning: (vsim-3015) D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v(169): [PCDPC] - Port size (15 or 15) does not match connection size (16) for port 'address'. The port definition is at: D:/XUNIFANGZHEN/FPGA/prj/ram1.v(40).
+# 
+#         Region: /tb_vga_pic/u_vga_pic/ram1_inst
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+add wave -position insertpoint sim:/tb_vga_pic/u_vga_pic/*
+restart
+# ** Warning: (vsim-3017) D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v(67): [TFMPC] - Too few port connections. Expected 10, found 9.
+# 
+#         Region: /tb_vga_pic/u_vga_pic
+# ** Warning: (vsim-3722) D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v(67): [TFMPC] - Missing connection for port 'data_cnt'.
+# 
+# ** Warning: (vsim-3015) D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v(137): [PCDPC] - Port size (15 or 15) does not match connection size (16) for port 'address'. The port definition is at: D:/XUNIFANGZHEN/FPGA/prj/rom1.v(40).
+# 
+#         Region: /tb_vga_pic/u_vga_pic/rom1_inst
+# ** Warning: (vsim-3017) D:/XUNIFANGZHEN/FPGA/rtl/sobel.v(47): [TFMPC] - Too few port connections. Expected 6, found 5.
+# 
+#         Region: /tb_vga_pic/u_vga_pic/u_sobel/shiftreg_inst
+# ** Warning: (vsim-3722) D:/XUNIFANGZHEN/FPGA/rtl/sobel.v(47): [TFMPC] - Missing connection for port 'shiftout'.
+# 
+# ** Warning: (vsim-3015) D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v(169): [PCDPC] - Port size (15 or 15) does not match connection size (16) for port 'address'. The port definition is at: D:/XUNIFANGZHEN/FPGA/prj/ram1.v(40).
+# 
+#         Region: /tb_vga_pic/u_vga_pic/ram1_inst
+run
+# ** Note: $finish    : D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v(71)
+#    Time: 15360 us  Iteration: 0  Instance: /tb_vga_pic
+# 1
+# Break in Module tb_vga_pic at D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v line 71
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+do FPGA_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/rtl {D:/XUNIFANGZHEN/FPGA/rtl/clk_divx.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clk_divx
+# 
+# Top level modules:
+# 	clk_divx
+# vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/rtl {D:/XUNIFANGZHEN/FPGA/rtl/FPGA.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FPGA
+# 
+# Top level modules:
+# 	FPGA
+# vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/rtl {D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_pic
+# 
+# Top level modules:
+# 	vga_pic
+# vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/rtl {D:/XUNIFANGZHEN/FPGA/rtl/vga_ctrl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_ctrl
+# 
+# Top level modules:
+# 	vga_ctrl
+# vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/rtl {D:/XUNIFANGZHEN/FPGA/rtl/sobel.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sobel
+# 
+# Top level modules:
+# 	sobel
+# vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/prj {D:/XUNIFANGZHEN/FPGA/prj/ram1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram1
+# 
+# Top level modules:
+# 	ram1
+# vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/prj {D:/XUNIFANGZHEN/FPGA/prj/altpll1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altpll1
+# 
+# Top level modules:
+# 	altpll1
+# vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/prj {D:/XUNIFANGZHEN/FPGA/prj/rom1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module rom1
+# 
+# Top level modules:
+# 	rom1
+# vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/prj {D:/XUNIFANGZHEN/FPGA/prj/shiftreg.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module shiftreg
+# 
+# Top level modules:
+# 	shiftreg
+# vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/prj/db {D:/XUNIFANGZHEN/FPGA/prj/db/altpll1_altpll.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module altpll1_altpll
+# 
+# Top level modules:
+# 	altpll1_altpll
+# 
+# vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/prj/../sim {D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_vga_pic
+# 
+# Top level modules:
+# 	tb_vga_pic
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_vga_pic
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_vga_pic 
+# Loading work.tb_vga_pic
+# Loading work.vga_pic
+# Loading work.rom1
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.sobel
+# Loading work.shiftreg
+# Loading altera_mf_ver.altshift_taps
+# Loading work.ram1
+# ** Warning: (vsim-3017) D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v(67): [TFMPC] - Too few port connections. Expected 10, found 9.
+# 
+#         Region: /tb_vga_pic/u_vga_pic
+# ** Warning: (vsim-3722) D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v(67): [TFMPC] - Missing connection for port 'data_cnt'.
+# 
+# ** Warning: (vsim-3015) D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v(137): [PCDPC] - Port size (15 or 15) does not match connection size (16) for port 'address'. The port definition is at: D:/XUNIFANGZHEN/FPGA/prj/rom1.v(40).
+# 
+#         Region: /tb_vga_pic/u_vga_pic/rom1_inst
+# ** Warning: (vsim-3017) D:/XUNIFANGZHEN/FPGA/rtl/sobel.v(47): [TFMPC] - Too few port connections. Expected 6, found 5.
+# 
+#         Region: /tb_vga_pic/u_vga_pic/u_sobel/shiftreg_inst
+# ** Warning: (vsim-3722) D:/XUNIFANGZHEN/FPGA/rtl/sobel.v(47): [TFMPC] - Missing connection for port 'shiftout'.
+# 
+# ** Warning: (vsim-3015) D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v(169): [PCDPC] - Port size (15 or 15) does not match connection size (16) for port 'address'. The port definition is at: D:/XUNIFANGZHEN/FPGA/prj/ram1.v(40).
+# 
+#         Region: /tb_vga_pic/u_vga_pic/ram1_inst
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+add wave -position insertpoint sim:/tb_vga_pic/u_vga_pic/*
+restart
+# ** Warning: (vsim-3017) D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v(67): [TFMPC] - Too few port connections. Expected 10, found 9.
+# 
+#         Region: /tb_vga_pic/u_vga_pic
+# ** Warning: (vsim-3722) D:/XUNIFANGZHEN/FPGA/prj/../sim/tb_vga_pic.v(67): [TFMPC] - Missing connection for port 'data_cnt'.
+# 
+# ** Warning: (vsim-3015) D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v(137): [PCDPC] - Port size (15 or 15) does not match connection size (16) for port 'address'. The port definition is at: D:/XUNIFANGZHEN/FPGA/prj/rom1.v(40).
+# 
+#         Region: /tb_vga_pic/u_vga_pic/rom1_inst
+# ** Warning: (vsim-3017) D:/XUNIFANGZHEN/FPGA/rtl/sobel.v(47): [TFMPC] - Too few port connections. Expected 6, found 5.
+# 
+#         Region: /tb_vga_pic/u_vga_pic/u_sobel/shiftreg_inst
+# ** Warning: (vsim-3722) D:/XUNIFANGZHEN/FPGA/rtl/sobel.v(47): [TFMPC] - Missing connection for port 'shiftout'.
+# 
+# ** Warning: (vsim-3015) D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v(169): [PCDPC] - Port size (15 or 15) does not match connection size (16) for port 'address'. The port definition is at: D:/XUNIFANGZHEN/FPGA/prj/ram1.v(40).
 # 
 #         Region: /tb_vga_pic/u_vga_pic/ram1_inst
 run

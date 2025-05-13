@@ -19,7 +19,7 @@ wire [9 : 0] pix_x;
 wire [9 : 0] pix_y;
 wire [23 : 0] rgb;
 wire [23 : 0] pix_data;
-
+wire clk1;
 /*========================VGA LCD显示模块========================*/
 altpll1 altpll1_inst                                 //产生时钟信号    
 (
@@ -27,6 +27,22 @@ altpll1 altpll1_inst                                 //产生时钟信号
     .areset(rst),
     .c0(c0)
 );
+wire clk_div;
+clk_divx u_clk_divx(
+    .clk      	(clk       ),
+    .rstn     	(rstn      ),
+    .div_fact 	('d50_000_000  ),
+    .clk_div  	(clk1   )
+);
+reg [9 : 0] cnt;
+always @(posedge clk1 or negedge rstn) begin
+    if (!rstn)
+        cnt <= 10'd0;
+    else if (cnt == 10'd999)
+        cnt <= 10'd0;
+    else
+        cnt <= cnt + 1'b1;
+end
 vga_pic vga_pic                                 //图像数据控制模块
 (
     .rstn(rstn),
@@ -34,6 +50,7 @@ vga_pic vga_pic                                 //图像数据控制模块
     .keyin(keyin),
     .pix_y(pix_y),
     .pix_x(pix_x),
+    .data_cnt(cnt),
     .color_data_out(pix_data)
 );
 wire hsync;

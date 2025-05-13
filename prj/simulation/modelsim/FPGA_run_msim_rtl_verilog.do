@@ -5,6 +5,7 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/rtl {D:/XUNIFANGZHEN/FPGA/rtl/clk_divx.v}
 vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/rtl {D:/XUNIFANGZHEN/FPGA/rtl/FPGA.v}
 vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/rtl {D:/XUNIFANGZHEN/FPGA/rtl/vga_pic.v}
 vlog -vlog01compat -work work +incdir+D:/XUNIFANGZHEN/FPGA/rtl {D:/XUNIFANGZHEN/FPGA/rtl/vga_ctrl.v}
